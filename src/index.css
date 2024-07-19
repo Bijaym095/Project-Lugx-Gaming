@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body {
+        @apply
+        w-full
+        h-full
+        ;
+    }
+    
+    body {
+        @apply
+        min-w-[320px]
+        bg-white
+        text-black/80
+        text-[1rem] /* 1rem */
+        2xl:text-[1.125rem]
+        font-poppins
+        font-normal
+        leading-normal
+        overflow-x-hidden
+        ;
+    }
+    
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        @apply
+        leading-snug
+        font-bold
+        mb-2
+        2xl:mb-4
+        ;
+    }
+    
+    h1, .h1 {
+        @apply
+        text-[1.5rem]
+        sm:text-[2rem]
+        lg:text-[2.5rem]
+        2xl:text-[3.125rem]
+        ;
+    }
+    
+    h2, .h2 {
+        @apply
+        text-[1.5rem]
+        lg:text-[2.125rem]
+        2xl:text-[3rem]
+        ;
+    }
+    
+    h3, .h3 {
+        @apply
+        text-[1.5rem]
+        2xl:text-[2.375rem]
+        ;
+    }
+
+    h4, .h4 {
+        @apply
+        text-[1.375rem]
+        2xl:text-[1.5rem]
+        ;
+    }
+
+    h5, .h5 {
+        @apply
+        text-[1.125rem]
+        2xl:text-[1.25rem]
+        ;
+    }
+
+    h6, .h6 {
+        @apply
+        text-[1rem]
+        2xl:text-[1.125rem]
+        ;
+    }
+
+    p {
+        @apply
+        mb-4
+        ;        
+    }
+
+    a:not(.btn) {
+        @apply
+        text-primary
+        hover:opacity-80
+        ;
+    }
+
+    picture {
+        @apply
+        block
+        mb-2
+        2xl:mb-4
+        ;
+    }
+
+    .site-wrapper {
+        @apply
+        flex
+        flex-col
+        min-h-full
+        ;
+    }
+
+    .site-content {
+        @apply
+        grow
+        ;
+    }
+
+    .site-header, .site-content, .site-footer {
+        @apply
+        shrink-0
+        ;
+    }
+}
+
+@layer utilities {
+    .stretched-link {
+        @apply     
+        after:content-['']
+        after:absolute
+        after:top-0
+        after:left-0
+        after:right-0
+        after:bottom-0
+        after:z-10
+        ;
+    }
+}
