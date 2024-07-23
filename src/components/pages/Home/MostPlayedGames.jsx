@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+import { buttonVariants } from "@/components/common/Button";
 import TopGameCard from "@/components/shared/TopGameCard";
 import { topGames } from "@/data";
 
@@ -11,7 +14,7 @@ const MostPlayedGames = () => {
                     <h2>Most Played</h2>
                 </div>
                 <div>
-                    <a href="/" role="button" className="btn btn-primary">VIEW ALL</a>
+                <Link to="/" className={buttonVariants({variant: "primary", className: "[&:not(:hover)]:text-white"})}>View All</Link>
                 </div>
             </header>
 

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { buttonVariants } from "@/components/common/Button";
 
 const TopGameCard = ({ imgSrc, imgAltText, category, name }) => {
   return (
@@ -13,7 +14,7 @@ const TopGameCard = ({ imgSrc, imgAltText, category, name }) => {
             <span className="inline-block">{category}</span>
             <h3 className="text-[1.125rem]"><Link to="/" className="stretched-link transition-all duration-300 ease-in-out group-hover:text-secondary">{name}</Link></h3>
             <div className="absolute left-1/2 -bottom-5 -translate-x-1/2">
-                <Link to="/" role="button" className="btn btn-primary group-hover:bg-secondary group-hover:hover:text-secondary group-hover:hover:bg-white group-hover:hover:border-secondary">Explore</Link>
+                <Link to="/" className={buttonVariants({variant: "primary", className: "[&:not(:hover)]:text-white group-hover:bg-secondary group-hover:hover:text-secondary group-hover:hover:bg-white group-hover:hover:border-secondary"})}>Explore</Link>
             </div>
         </div>
     </div>

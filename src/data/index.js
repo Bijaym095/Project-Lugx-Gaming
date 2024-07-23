@@ -13,15 +13,19 @@ import topCategoryImg1 from "@/assets/images/categories-01.jpg";
 export const features = [
   {
     title: "Free Storage",
+    icon: "free-storage",
   },
   {
     title: "User More",
+    icon: "avatar",
   },
   {
-    title: "Reply Readt",
+    title: "Reply Ready",
+    icon: "fast-reply",
   },
   {
     title: "Easy Layout",
+    icon: "easy-layout",
   },
 ];
 

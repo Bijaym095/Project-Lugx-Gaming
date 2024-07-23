@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
+import Icon from "@/components/common/Icon";
+
 const GamesCard = ({ game }) => {
   const {
     totalPrice,
@@ -35,7 +37,7 @@ const GamesCard = ({ game }) => {
           </h3>
         </div>
 
-        <NavLink to="/" className="block w-10 h-10 rounded-full bg-primary group-hover:bg-secondary flex-none"></NavLink>
+        <NavLink to="/" className="grid place-items-center w-10 h-10 rounded-full bg-primary group-hover:bg-secondary flex-none"><Icon icon="shopping-cart-fill" size={16} color="white" /></NavLink>
       </div>
       {/* Card Content */}
     </div>
