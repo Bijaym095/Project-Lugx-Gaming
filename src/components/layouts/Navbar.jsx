@@ -10,10 +10,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", href: "/", },
-    { name: "Components", href: "/components", } ,
     { name: "Our Shop", href: "/", },
     { name: "Product Details", href: "/", },
-    { name: "Contact Us", href: "/", },
+    { name: "Contact Us", href: "/contact", },
   ];
 
   const toggleMenu = () => setIsMenuOpen((value)=> !value);
@@ -45,7 +44,7 @@ const Navbar = () => {
 
           <div>
             <div className={`navbar-collapse max-xl:fixed top-0 left-0 bottom-0 flex max-xl:flex-col xl:items-center gap-4 max-xl:w-[280px] max-xl:py-10 ${isMenuOpen ? "max-xl:translate-x-0" : "max-xl:-translate-x-full"} text-white max-xl:bg-black/80 max-xl:backdrop-blur-lg transition-all duration-300 ease-in-out`}>
-              <ul className="navbar-nav flex max-xl:flex-col xl:gap-2 max-xl:[&_li]:p-4 max-xl:[&_li]:border-b max-xl:[&_li]:border-white">
+              <ul className="navbar-nav flex max-xl:flex-col xl:gap-6 max-xl:[&_li]:p-4 max-xl:[&_li]:border-b max-xl:[&_li]:border-white">
                 {navLinks.map((link, index) => (
                   <li key={index}>
                     <NavLink to={link.href} className="!text-inherit">{link.name}</NavLink>

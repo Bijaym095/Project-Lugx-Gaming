@@ -9,7 +9,7 @@ const RootLayout = () => {
   const mainRef = useRef(null);
 
   useEffect(() => {
-    const siteHeaderHeight = document.querySelector(".site-header").clientHeight;
+    const siteHeaderHeight = document.querySelector(".site-header").getBoundingClientRect().height;
 
     const setMarginTop = () => {
       if(mainRef.current){

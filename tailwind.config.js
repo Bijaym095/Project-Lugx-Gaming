@@ -17,6 +17,10 @@ export default {
         },
         "lx-gray": {
           DEFAULT: "#eeeeee",
+          '400': '#f7f7f7',
+          '500': '#e7e7e7',
+          '800': '#aaaaaa',
+          '900': '#4a4a4a',
         },
       },
 
@@ -30,6 +34,7 @@ export default {
 
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        icomoon: ["icomoon"],
       },
     },
   },

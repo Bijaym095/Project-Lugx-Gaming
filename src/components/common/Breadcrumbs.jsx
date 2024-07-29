@@ -8,7 +8,7 @@ const Breadcrumbs = () => {
 
   return (
     <nav aria-label="breadcrumb">
-      <ul className="breadcrumb">
+      <ul className="breadcrumb flex flex-wrap gap-2 text-white [&_li]:relative [&_li:not(:first-child)]:pl-[1.125rem] before:[&_li:not(:first-child)]:content-['\e906'] before:[&_li:not(:first-child)]:absolute before:[&_li:not(:first-child)]:top-1/2 before:[&_li:not(:first-child)]:left-0 before:[&_li:not(:first-child)]:-translate-y-1/2 before:[&_li:not(:first-child)]:font-icomoon  before:[&_li:not(:first-child)]:text-[0.75rem] [&_li_a]:text-inherit [&_li_a]:underline hover:[&_li_a]:no-underline">
         <li>
           <Link to="/">Home</Link>
         </li>
